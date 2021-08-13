@@ -10,7 +10,7 @@ body {
 }
 .welcome {
     padding: 50px;
-    padding-top: 200px;
+    padding-top: 80px;
 }
 #projects {
     display: flex;
@@ -48,6 +48,13 @@ body {
 
 }
 
+.profileimage {
+    justify-content: center;
+    width: auto;
+    height: 255px;
+    margin-top: 50px;
+}
+
 #contact {
     text-align: center;
 }
@@ -57,14 +64,28 @@ body {
         position: fixed;
         overflow: hidden;
         top: 0;
-        width: 82%;
+        width: 90%;
       }
     #welcome-section {
-        width: 82%;
-        height: 360px;
-        margin-top: 0px;
+        width: 93%;
+        margin-top: 20px;
         justify-content: center;
         text-align: center;
+    }
+    #projects {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+    
+    .proje {
+        justify-content: center;
+        margin-top: 80px;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 100px;
+        padding-bottom: 20px;
     }
     
 }
