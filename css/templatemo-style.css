@@ -631,7 +631,8 @@ ul {
   }
   .home-content .left-text {     
     float: none;     
-    width: auto; 
+    width: auto;
+    margin-top: 25px; 
   }
   .home-content .right-image {
     text-align: center;
