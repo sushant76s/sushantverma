@@ -232,7 +232,7 @@
                       <div class="socialicons">
                         <a href="https://www.instagram.com/sushantverma__/" target="_blank" class="fa fa-instagram"></a>
                         <a href="https://twitter.com/sushantverma__" target="blank" class="fa fa-twitter"></a>
-                        <a href="https://www.facebook.com/sushant.verma.54584982/" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://www.facebook.com/sushant.susverma/" target="_blank" class="fa fa-facebook"></a>
                       </div>
                       <div class="strike">
                         <span>OR</span>
@@ -240,7 +240,7 @@
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="" method="post" onsubmit="sendEmail(); reset(); return flase;">
                               <fieldset>
                                 <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
                               </fieldset>
@@ -287,6 +287,22 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+              Host : "smtp.yourisp.com",
+              Username : "username",
+              Password : "password",
+              To : 'them@website.com',
+              From : "you@isp.com",
+              Subject : "This is the subject",
+              Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+          }
         </script>
     </body>
 </html>
